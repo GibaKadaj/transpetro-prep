@@ -43,6 +43,68 @@
                 <div class="stat-label">Tempo Total</div>
             </div>
         </div>
+
+        <div class="dashboard-cards">
+            <!-- Card HOJE -->
+            <div class="dashboard-card" id="today-card">
+                <div class="card-header">
+                    <h3>HOJE</h3>
+                </div>
+                <div class="card-content" id="today-content">
+                    <div class="empty-state">
+                        <i class="bi bi-calendar-check"></i>
+                        <p>Nenhum plano para hoje</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card BLOCOS INICIADOS -->
+            <div class="dashboard-card" id="blocks-card">
+                <div class="card-header">
+                    <h3>BLOCOS INICIADOS</h3>
+                </div>
+                <div class="card-content" id="blocks-content">
+                    <div class="blocks-progress">
+                        <div class="progress-text">
+                            <span class="progress-value" id="blocks-count">0</span>
+                            <span class="progress-total">/ 17 blocos</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="blocks-progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card ÚLTIMO SIMULADO -->
+            <div class="dashboard-card" id="simulado-card">
+                <div class="card-header">
+                    <h3>ÚLTIMO SIMULADO</h3>
+                </div>
+                <div class="card-content" id="simulado-content">
+                    <div class="empty-state">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <p>Nenhum simulado realizado</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card CONSISTÊNCIA -->
+            <div class="dashboard-card" id="consistency-card">
+                <div class="card-header">
+                    <h3>CONSISTÊNCIA</h3>
+                </div>
+                <div class="card-content" id="consistency-content">
+                    <div class="consistency-display">
+                        <div class="consistency-value" id="consistency-percentage">0%</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="consistency-progress-bar" style="width: 0%"></div>
+                        </div>
+                        <p class="consistency-label">dos dias estudados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Página Timer -->
@@ -183,6 +245,7 @@
     <script src="js/stats.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/seed-data.js"></script>
 
     <!-- Service Worker Registration -->
     <script>

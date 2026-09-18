@@ -5,6 +5,9 @@ const App = {
             // Inicializar banco de dados
             await DB.init();
 
+            // Inicializar cobertura de blocos (primeira vez)
+            await DB.initBlockCoverage();
+
             // Inicializar interface
             UI.init();
 
